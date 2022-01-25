@@ -1,9 +1,12 @@
 
-header {
-    color: green;
+header 
+{
+    color: #05386B;
     font-family: "Arial Narrow";
+    text-align: center;
 }
-
-.main {
-    color: blue;
+body {
+    color: #05386B;
+    font-family: "Arial Narrow";
+    background: #A2FAA3;
 }

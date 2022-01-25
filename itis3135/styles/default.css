@@ -1,3 +1,9 @@
+
 header {
     color: green;
+    font-family: "Arial Narrow";
+}
+
+.main {
+    color: blue;
 }

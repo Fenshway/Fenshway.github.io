@@ -1,12 +1,18 @@
 
 header 
 {
-    color: #05386B;
-    font-family: "Arial Narrow";
+    color: #002395;
+    font-family: "Open Sans";
     text-align: center;
 }
-body {
-    color: #05386B;
+
+body 
+{
+    color: #323031;
     font-family: "Arial Narrow";
     background: #A2FAA3;
 }
+
+a { color: rgb(3, 43, 95); }
+a { color: rgb(3, 43, 95); }
+a:hover { color: #F8F8FF; }

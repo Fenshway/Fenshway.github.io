@@ -17,7 +17,10 @@ body
     width: 20%;  
     height:auto;
 }
-
+figcaption
+{
+    font-family: "Courier New";
+}
 a { color: rgb(3, 43, 95); }
 a { color: rgb(3, 43, 95); }
 a:hover { color: #F8F8FF; }

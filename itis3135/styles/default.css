@@ -1,11 +1,9 @@
-
 header 
 {
     color: #002395;
     font-family: "Open Sans";
     text-align: center;
 }
-
 body 
 {
     color: #323031;
@@ -21,6 +19,9 @@ figcaption
 {
     font-family: "Courier New";
 }
-
 a { color: #6699CC; }
 a:hover { color: #71816D; }
+h2 {
+    font-family: "Helios Regular";
+    color: #002395;
+}

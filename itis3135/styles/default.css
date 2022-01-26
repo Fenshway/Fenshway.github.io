@@ -12,10 +12,10 @@ body
     font-family: "Arial Narrow";
     background: #A2FAA3;
 }
-.intro-photo
+#intro-photo
 {
-    width: 20px;
-    height: 40px;
+    width: 20%;  
+    height:auto;
 }
 
 a { color: rgb(3, 43, 95); }

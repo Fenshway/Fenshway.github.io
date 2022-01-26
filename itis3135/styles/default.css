@@ -10,7 +10,7 @@ body
 {
     color: #323031;
     font-family: "Arial Narrow";
-    background: #A2FAA3;
+    background: #D0F0C0;
 }
 #intro-photo
 {
@@ -21,6 +21,6 @@ figcaption
 {
     font-family: "Courier New";
 }
-a { color: rgb(3, 43, 95); }
-a { color: rgb(3, 43, 95); }
+
+a { color: #71816D; }
 a:hover { color: #F8F8FF; }

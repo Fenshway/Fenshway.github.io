@@ -23,28 +23,47 @@
     </header>
     <main>
         <h2>Activity #3 - HTML Forms</h2>
-        <p>JPrivett Design Inc.</p>
-        <form>
-            <label for ="fname"> First name:</label>
-            <input type ="text" id ="fname" name ="fname">
-            <label for ="lname"> Last name:</label>
+        <h3 class ="h3-form">JPrivett Design Inc.</h3>
+        <form class ="form-assign">
+            <label for ="fname"> First name:</label><br>
+            <input type ="text" id ="fname" name ="fname"><br>
+            <label for ="lname"> Last name:</label><br>
             <input type ="text" id ="lname" name ="lname"><br>
-            <label for ="phone"> Phone number:</label>
+            <label for ="phone"> Phone number:</label><br>
             <input type ="text" id ="phone" name ="phone"><br>
-            <label for ="email"> Email address:</label>
-            <input type ="text" id ="email" name ="email"><br>
+            <label for ="email"> Email address:</label><br>
+            <input type ="text" id ="email" name ="email"><br><br>
 
+            <label for ="interest">Are you currently in the market for a webdesign company?</label><br>
+            <select name ="interest" id ="interest">
+                <option value ="default"></option>
+                <option value ="yes">Yes</option>
+                <option value ="maybe">Not currently maybe in the future</option>
+                <option value ="no">No</option>
+            </select><br><br>
 
-            <div>If you would like us to contact you regarding updates or special offers, please select your preferred method of contact</div>
+            <div>Which pet is the best</div>
+            <input type ="checkbox" id ="animal1" name ="animal1" value= "Dog">
+            <label for ="animal1"> Dog</label>
+            <input type ="checkbox" id ="animal2" name ="animal2" value= "Cat">
+            <label for ="animal2"> Cat</label>
+            <input type ="checkbox" id ="animal3" name ="animal3" value= "Bird">
+            <label for ="animal3"> Bird</label>
+            <input type ="checkbox" id ="animal4" name ="animal4" value= "Turtle">
+            <label for ="animal4"> Turtle</label><br><br>
+            <div>If you would like us to contact you regarding updates or special offers,</div>
+                <div>please select your preferred method of contact. Don't worry, we don't spam.</div><br>
             <input type ="radio" id ="email" name ="preferred_method" value ="Email">
             <label for ="email">Email</label><br>
             <input type ="radio" id ="text" name ="preferred_method" value ="Text">
             <label for ="text">Text</label><br>
+            <input type ="radio" id ="optout" name ="preferred_method" value ="optout">
+            <label for ="optout">Don't contact me</label><br>
         </form>
 
     </main>
     <footer>
-        <p>Created by Jprivett Design Inc. &copy;2022.</p><br>
+        <p>Created by Jprivett Design Inc. &copy;2022</p><br>
         <a href ="https://validator.w3.org/check?uri=" id ="validation_link_html">
             <img src ="images/button_validation_html5.png" alt ="html validation button">
         </a>

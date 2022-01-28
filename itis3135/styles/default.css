@@ -80,6 +80,7 @@ main
 footer
 {
     margin: 0px 20px;
+    text-align: right;
 }
 footer a
 {
@@ -122,5 +123,27 @@ td
 {
     margin-left: 310px;
     padding-bottom: 50px;
-    
+
+}
+footer nav
+{
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+}
+footer ul
+{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+footer li 
+{
+    float: right;
+    list-style-type: none;
+    font-size: 215x;
+}
+footer img
+{
+    padding: 0px 10px;
 }

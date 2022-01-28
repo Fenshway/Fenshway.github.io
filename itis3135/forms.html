@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset = "utf-8" />
-    <title>Justin Privett | ITIS 3135 | Jet Parrot Introduction</title>
+    <title>Justin Privett | ITIS 3135 | Jet Parrot</title>
     <link href = "styles/default.css" type = "text/css"  rel = "stylesheet"> 
 </head>
 <body>
@@ -20,19 +20,31 @@
             </ul>
         </nav>
         <h1>Justin Privett | ITIS 3135 | Jet Parrot</h1>
-        <h2>Activity #3 - HTML Forms</h2>
     </header>
     <main>
+        <h2>Activity #3 - HTML Forms</h2>
+        <p>JPrivett Design Inc.</p>
+        <form>
+            <label for ="fname"> First name:</label>
+            <input type ="text" id ="fname" name ="fname">
+            <label for ="lname"> Last name:</label>
+            <input type ="text" id ="lname" name ="lname"><br>
+            <label for ="phone"> Phone number:</label>
+            <input type ="text" id ="phone" name ="phone"><br>
+            <label for ="email"> Email address:</label>
+            <input type ="text" id ="email" name ="email"><br>
+
+
+            <div>If you would like us to contact you regarding updates or special offers, please select your preferred method of contact</div>
+            <input type ="radio" id ="email" name ="preferred_method" value ="Email">
+            <label for ="email">Email</label><br>
+            <input type ="radio" id ="text" name ="preferred_method" value ="Text">
+            <label for ="text">Text</label><br>
+        </form>
 
     </main>
     <footer>
-        <a href ="https://jsfiddle.net/user/Fenshway/fiddles/">jsfddle</a><br>
-        <a href ="https://www.freecodecamp.org/fenshway">freecodecamp</a><br>
-        <a href ="https://www.linkedin.com/in/justin-privett-7a4a78209/">linkedin</a><br>
-        <a href ="https://github.com/Fenshway">github</a><br>
-        <a href ="https://Fenshway.github.io">github.io</a><br><br>
-        Created by Jprivett Design Inc. &copy;2022.<br>
-
+        <p>Created by Jprivett Design Inc. &copy;2022.</p>><br>
         <a href ="https://validator.w3.org/check?uri=" id ="validation_link_html">
             <img src ="images/button_validation_html5.png" alt ="html validation button">
         </a>
@@ -43,6 +55,16 @@
             document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         </script>
+        <nav>
+            <ul>
+                <li><a href ="https://jsfiddle.net/user/Fenshway/fiddles/">jsfddle</a></li>
+                <li><a href ="https://www.freecodecamp.org/fenshway">freecodecamp</a></li>
+                <li><a href ="https://www.linkedin.com/in/justin-privett-7a4a78209/">linkedin</a></li>
+                <li><a href ="https://www.codecademy.com/profiles/fenshway">codeacademy</a></li>
+                <li><a href ="https://github.com/Fenshway">github</a></li>
+                <li><a href ="https://Fenshway.github.io">github.io</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

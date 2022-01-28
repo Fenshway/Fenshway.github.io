@@ -17,7 +17,6 @@ header ul
     padding: 0;
     margin: 0 0 0 30px;
     list-style: none;
-
 }
 header li 
 {
@@ -42,11 +41,11 @@ nav a
     font-family: Arial;
     color: #323031;
     text-align: center;
+    height: 20px;
 }
 nav a:hover
 {
     color: white;
-    transform: uppercase;
 }
 h1
 {
@@ -61,7 +60,7 @@ h1
     width: 20%;  
     height: auto;
 }
-figcaption
+.intro-cap
 {   
     text-align: center;
     font-family: "Courier New", sans-serif;
@@ -85,4 +84,43 @@ footer
 footer a
 {
     color: #FE5F55;
+}
+.complex-table-fig
+{
+    margin: auto;
+}
+th
+{
+    border: 1px solid black;
+}
+.employee-data
+{
+    border: 1px solid black;
+}
+.complex-employee-th
+{
+    border: 1px solid black;
+    background: #323031;
+    color: #F8F8FF
+}
+td
+{
+    border: 1px solid black;
+}
+.complex-employee-data tr
+{
+    border: 1px solid black;
+    background-color: #565656;
+    color: #F8F8FF
+}
+.complex-employee-data tr:nth-child(even) 
+{
+    background-color: #777777;
+    color: #F8F8FF; 
+}
+.table-cap
+{
+    margin-left: 310px;
+    padding-bottom: 50px;
+    
 }

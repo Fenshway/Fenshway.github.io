@@ -137,12 +137,11 @@ footer li
 {
     float: right;
     list-style-type: none;
-    font-size: 215x;
 }
 footer img
 {
-    padding: 0px 15px;
-    
+    padding: 0px 5px;
+
 }
 .form-assign
 {

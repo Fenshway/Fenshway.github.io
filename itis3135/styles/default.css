@@ -41,9 +41,9 @@ nav a
     font-family: Arial;
     color: #323031;
     text-align: center;
-    height: 20px;
+    height: 30px;
 }
-nav a:hover
+a:hover
 {
     color: white;
 }
@@ -75,16 +75,17 @@ h2
 }
 main
 {
-    margin: 0px 20px;
+    margin: 0px 30px;
 }
 footer
 {
-    margin: 0px 20px;
+    margin: 0px 30px;
     text-align: right;
 }
-footer a
+footer a, main a
 {
     color: #FE5F55;
+    text-decoration: none;
 }
 .complex-table-fig
 {
@@ -119,29 +120,28 @@ th, td
 {
     margin-left: 310px;
     padding-bottom: 50px;
-
 }
 footer nav
 {
+    margin: 0 0 0 -50;
     width: 100%;
-    text-align: center;
     overflow: auto;
 }
 footer ul
 {
-    padding: 0;
-    margin: 0 0 0 150px;
-    list-style: none;
+    margin: 0 auto;
+    list-style-type: none;
 }
 footer li 
 {
     float: right;
     list-style-type: none;
+    text-align: center;
+
 }
 footer img
 {
     padding: 0px 5px;
-
 }
 .form-assign
 {

@@ -7,23 +7,8 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href ="https://webpages.charlotte.edu/jprivet6/"><img class ="parrot-logo" src ="images/parrot_logo.png" alt ="Parrot Logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href ="index.html">Home</a></li>
-                <li><a href ="introduction.html">Introduction</a></li>
-                <li><a href ="contract.html">Contract</a></li>
-                <li><a href ="tables.html">Tables</a></li>
-                <li><a href ="forms.html">Forms</a></li>
-                <li><a href ="website_evaluations.html">Evaluations</a></li>
-                <li><a href ="stuff/CRAPYwebbook.html">Crappy</a></li>
-                <li><a href ="brand-jet-parrot.html" >Brand</a></li>
-            </ul>
-        </nav>
+        <div data-include="components/header.html"></div>
         <h1>Justin Privett | ITIS 3135 | Jet Parrot</h1>
-
     </header>
     <main>
         <h2>Activity #2 - HTML Tables</h2>
@@ -157,32 +142,10 @@
             </table><br>
             <figcaption class ="table-cap"><strong>Complex Table</strong></figcaption>
          </figure>
-
-
     </main>
-
     <footer>
-        <div>Created by<a href="jprivettdesigns.com/">Jprivett Design Inc.</a>&copy;2022</div><br>
-        <a href ="https://validator.w3.org/check?uri=" id ="validation_link_html">
-            <img src ="images/button_validation_html5.png" alt ="html validation button">
-        </a>
-        <a href ="https://jigsaw.w3.org/css-validator/check/referer?uri=" id ="validation_link_css">
-            <img src ="images/button_validation_css.png" alt ="css validation button">
-        </a>
-        <script>
-            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>
-        <nav>
-            <ul>
-                <li><a href ="https://jsfiddle.net/user/Fenshway/fiddles/">jsfddle</a></li>
-                <li><a href ="https://www.freecodecamp.org/fenshway">freecodecamp</a></li>
-                <li><a href ="https://www.linkedin.com/in/justin-privett-7a4a78209/">linkedin</a></li>
-                <li><a href ="https://www.codecademy.com/profiles/fenshway">codeacademy</a></li>
-                <li><a href ="https://github.com/Fenshway">github</a></li>
-                <li><a href ="https://Fenshway.github.io">github.io</a></li>
-            </ul>
-        </nav>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/include.js"></script>
 </body>
 </html>

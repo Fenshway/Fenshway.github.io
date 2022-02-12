@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8" />
+    <title>Justin Privett | ITIS 3135 | Jet Parrot First JS</title>
+    <link href ="styles/default.css" type = "text/css"  rel = "stylesheet">
+    <script src ="scripts/include.js"></script>
+    <script src ="scripts/defaultscripts.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>First JS Page</h2>
+        <button onclick ="scriptTest()">TEST ME</button>
+        
+        <p>Today's date is
+            <script>
+                const today = new Date();
+                document.write(today.toDateString());
+            </script>
+        </p>
+        <p></p>
+        <script>
+            const name = prompt("Enter name");
+            const mood = prompt("How are feeling today?");
+        </script>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+</body>
+</html>

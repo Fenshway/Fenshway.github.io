@@ -18,9 +18,10 @@
         <h2>First JS Page</h2>
         <button onclick ="scriptTest()">TEST ME</button>
         
-        <h3>Today's date is
+        <h3> today is
             <script>
                 const today = new Date();
+                const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
                 document.write(today.toDateString());
             </script>
         </h3>
@@ -32,7 +33,7 @@
 
         
         <p>Hi I am still working on this</p>
-        <div>update4:46
+        <div>update4:58
         </div>
     </main>
 

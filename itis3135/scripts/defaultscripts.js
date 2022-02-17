@@ -12,6 +12,6 @@ function moodPrompt()
 }
 function date()
 {
-    var today = new date();
+    var today = new Date();
     document.write(today.toDateString());
 }

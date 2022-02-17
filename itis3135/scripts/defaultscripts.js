@@ -2,12 +2,7 @@ function scriptTest()
 {
     alert("Hey my script is running");
 }
-function namePrompt()
+function testFunc()
 {
-    const name = prompt("Enter name");
+    alert("hey you tested me");
 }
-function moodPrompt()
-{
-    const mood = prompt("How are feeling today?");
-}
-

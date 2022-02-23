@@ -4,13 +4,16 @@ header nav
     background: #71816D !important;
     overflow: auto;
 }
-body
+header nav a
 {
-    margin: 0px;
-    padding: 0px;
-    background: #D0F0C0;;
+    width: 100px;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: Arial;
     color: #323031;
-    font-family: "Arial", sans-serif;
+    text-align: center;
+    height: 30px;
 }
 header ul
 {
@@ -24,6 +27,14 @@ header li
     list-style-type: none;
     font-size: 20px;
 }
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #D0F0C0;;
+    color: #323031;
+    font-family: "Arial", sans-serif;
+}
 .parrot-logo
 {
     position: absolute;
@@ -31,17 +42,6 @@ header li
     margin-left: 5px;
     width: 2.8%;
     height: auto;
-}
-nav a
-{
-    width: 100px;
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
-    font-family: Arial;
-    color: #323031;
-    text-align: center;
-    height: 30px;
 }
 a:hover
 {
@@ -79,13 +79,17 @@ main
 }
 footer
 {
-    margin: 0px 30px;
-    text-align: right;
+    text-align: center;
+}
+footer nav
+{
+    padding: 20px 20px;
 }
 footer a, main a
 {
     color: #FE5F55;
     text-decoration: none;
+
 }
 .complex-table-fig
 {
@@ -95,6 +99,25 @@ th, td
 {
     border: 1px solid black;
 }
+footer img
+{
+    padding: 0px 5px;
+}
+
+/* form assignment */
+.form-assign
+{
+    text-align: center;
+}
+.h3-form
+{
+    color: #002395;
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Tables assignment */
 .employee-data
 {
     border: 1px solid black;
@@ -120,37 +143,4 @@ th, td
 {
     margin-left: 310px;
     padding-bottom: 50px;
-}
-footer nav
-{
-    margin: 0 0 0 -50;
-    width: 100%;
-    overflow: auto;
-}
-footer ul
-{
-    margin: 0 auto;
-    list-style-type: none;
-}
-footer li 
-{
-    float: right;
-    list-style-type: none;
-    text-align: center;
-
-}
-footer img
-{
-    padding: 0px 5px;
-}
-.form-assign
-{
-    text-align: center;
-}
-.h3-form
-{
-    color: #002395;
-    font-family: "Open Sans";
-    text-align: center;
-    font-size: 25px;
 }

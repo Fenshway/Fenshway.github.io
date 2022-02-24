@@ -45,7 +45,7 @@ function validateEntry() //what is the purpose of this? This could all be done i
 {
     if (htmlShape != "out of bounds")
     {
-        alert("Your shape is a " + htmlShape)
+        alert("Your shape is a " + htmlShape);
     }
     else 
     {

@@ -12,31 +12,38 @@ function displayGreeting()
 {
     let readName = document.getElementById("inputName").value;
     let readMood = document.getElementById("inputMood").value;
-    document.getElementById("jpGreeting").innerHTML = (
-        "<p>Greetings " + readName + ", I am glad you are " + readMood + "!"
-    )
+    document.getElementById("jpGreeting").innerHTML = ("<p>Greetings " + readName + ", I am glad you are " + readMood + "!");
 }
 function calculateCm()
 {
     let numString = prompt("Convert a number from minutes to seconds.");
+    let numString = prompt("Convert your height from inches to centimeters");
     let pNum = parseFloat(numString);
-    let seconds = pNum * 60;
+    let cm = pNum * 2.54;
+    cm = cm.toFixed(2);
     if (isNaN(pNum))
     {
         alert("Not a number!");
     }
     else
     {
-        alert("The amount of seconds in " + pNum + " is " + seconds);
+        alert("Your height is " + cm + "cm.");
     }
 }
 function calculateCelsius()
 {
-    let numString = prompt("Convert your height from inches to centimeters");
+    let numString = prompt("Convert the current temperature from fahrenheit to celsius");
     let pNum = parseFloat(numString);
-    let cm = pNum * 2.54;
-    cm = cm.toFixed(2);
-    alert("Your height is " + cm + "cm.");
+    let celsius = (pNum - 32) * .5556;
+    celsius = celsius.toFixed(2);
+    if (isNaN(pNum))
+    {
+        alert("Not a number!");
+    }
+    else
+    {
+        alert("The current temperature of " + pNum + " is " + celsius + " in celsius.");
+    }
 }
 function calculateKMH()
 {
@@ -44,7 +51,14 @@ function calculateKMH()
     let pNum = parseFloat(numString);
     let kilometers = pNum * 1.60934;
     kilometers = kilometers.toFixed(2);
-    alert(pNum + " miles per hour is equal to " + kilometers + " per hour.")
+    if (isNaN(pNum))
+    {
+        alert("Not a number!");
+    }
+    else
+    {
+        alert(pNum + " miles per hour is equal to " + kilometers + " per hour.");
+    }
 }
 function calculateKG()
 {
@@ -52,7 +66,15 @@ function calculateKG()
     let pNum = parseFloat(numString);
     let kilograms = pNum * .453592;
     kilograms = kilograms.toFixed(1);
-    alert("Your weight is " + kilograms + " in kilograms.");
+
+    if (isNaN(pNum))
+    {
+        alert("Not a number!");
+    }
+    else
+    {
+        alert("Your weight is " + kilograms + " in kilograms.");
+    }
 }
 function calculateLitres()
 {
@@ -60,5 +82,12 @@ function calculateLitres()
     let pNum = parseFloat(numString);
     let litres = gallons * 3.78541;
     litres = litres.toFixed(2);
-    alert(pNum + " gallons is equal to " + litres + ".");
+    if (isNaN(pNum))
+    {
+        alert("Not a number!");
+    }
+    else
+    {
+        alert(pNum + " gallons is equal to " + litres + ".");
+    }
 }

@@ -4,16 +4,11 @@
     <meta charset = "utf-8" />
     <title>Justin Privett | ITIS 3135 | Jet Parrot First JS</title>
     <link href ="styles/default.css" type = "text/css"  rel = "stylesheet">
-    <script src ="scripts/include.js"></script>
-    <script src ="scripts/defaultscripts.js"></script>
-
 </head>
 <body>
-
     <header>
         <div data-include="components/header.html"></div>
     </header>
-
     <main>
         <h2>First JS Page</h2>
         <h2 id ="jpGreeting"></h2>
@@ -21,7 +16,7 @@
             <script>
                 jpDate();
             </script>
-        <div><button onclick ="scriptTest()">TEST ME</button></div>
+        <div><button onclick ="scriptTest()">Test me!</button></div>
         </h3>
         <p></p>
         <p>
@@ -30,22 +25,18 @@
             <button onclick ="displayGreeting();">Submit</button>
         </p>
         <p>
-            <button  onclick ="calculateSeconds()" type="button">Calculate Seconds</button>
+            Imperial to metric conversions.</br>
+            <button  onclick ="calculateCm()" type="button">Calculate Centimeters</button>
             <button  onclick ="calculateCelsius()" type="button">Calculate Celsius</button>
-            <button  onclick ="scriptTest()" type="button">test button</button>
-            <button  onclick ="scriptTest()" type="button">test button</button>
-            <button  onclick ="scriptTest()" type="button">test button</button>
+            <button  onclick ="calculateKMH()" type="button">Calculate KM/h</button>
+            <button  onclick ="calculateKG()" type="button">Calculate Kilograms</button>
+            <button  onclick ="calculateLitres()" type="button">Calculate Litres</button>
         </p>
-        
-        <p>Hi I am still working on this</p>
-        <div>update 5:23
-        </div>
     </main>
-
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/include.js"></script>
-
+    <script src ="scripts/defaultscripts.js"></script>
 </body>
 </html>

@@ -16,23 +16,25 @@
 
     <main>
         <h2>First JS Page</h2>
-        <button onclick ="scriptTest()">TEST ME</button>
-        
+        <h2 id ="jpGreeting"></h2>
         <h3>
-            updated
             <script>
                 jpDate();
-
             </script>
+        <div><button onclick ="scriptTest()">TEST ME</button></div>
         </h3>
         <p></p>
         <p>
-            <div>What is your name?  <input type ="text" name ="name" id ="name"> </div> <br>
-            <div>How are you doing today?  <input type ="text" name ="mood" id ="mood"></div><br>
-            <input type ="submit" value ="Submit">
+            <div>What is your name? <input type ="text" name ="name" id ="inputName"> </div> <br>
+            <div>How are you doing today? <input type ="text" name ="mood" id ="inputMood"></div><br>
+            <button onclick ="displayGreeting();">Submit</button>
         </p>
         <p>
-            <button  onclick="testFunc()" type="submit">test button</button>
+            <button  onclick ="calculateSeconds()" type="button">Calculate Seconds</button>
+            <button  onclick ="calculateCelsius()" type="button">Calculate Celsius</button>
+            <button  onclick ="scriptTest()" type="button">test button</button>
+            <button  onclick ="scriptTest()" type="button">test button</button>
+            <button  onclick ="scriptTest()" type="button">test button</button>
         </p>
         
         <p>Hi I am still working on this</p>

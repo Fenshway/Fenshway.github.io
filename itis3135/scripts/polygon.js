@@ -1,6 +1,6 @@
 function getShape()
 {
-    let numString = prompt("Enter a number 1-10 to find out which polygon correlates with your number.");
+    let numString = prompt("The Jet Parrots would like you to enter a number 1-10 to find out which polygon correlates with your number.");
     let pNum = parseInt(numString);
 
     let polygon = "out of bounds";
@@ -51,9 +51,4 @@ function validateEntry() //what is the purpose of this? This could all be done i
     {
         alert("Your entry is out of bounds");
     }
-}
-
-function result()
-{
-
 }

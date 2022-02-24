@@ -16,7 +16,7 @@ function displayGreeting()
         "<p>Greetings " + readName + ", I am glad you are " + readMood + "!"
     )
 }
-function calculateSeconds()
+function calculateCm()
 {
     let numString = prompt("Convert a number from minutes to seconds.");
     let pNum = parseFloat(numString);
@@ -60,5 +60,5 @@ function calculateLitres()
     let pNum = parseFloat(numString);
     let litres = gallons * 3.78541;
     litres = litres.toFixed(2);
-    alert(pNum + " gallons is equal to " + litress + ".");
+    alert(pNum + " gallons is equal to " + litres + ".");
 }

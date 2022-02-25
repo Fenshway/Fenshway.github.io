@@ -16,7 +16,6 @@ function displayGreeting()
 }
 function calculateCm()
 {
-    let numString = prompt("Convert a number from minutes to seconds.");
     let numString = prompt("Convert your height from inches to centimeters");
     let pNum = parseFloat(numString);
     let cm = pNum * 2.54;

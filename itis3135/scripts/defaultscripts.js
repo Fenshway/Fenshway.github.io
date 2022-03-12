@@ -56,7 +56,7 @@ function calculateKMH()
     }
     else
     {
-        alert(pNum + " miles per hour is equal to " + kilometers + " per hour.");
+        alert(pNum + " miles per hour is equal to " + kilometers + " kilometers per hour.");
     }
 }
 function calculateKG()
@@ -65,7 +65,6 @@ function calculateKG()
     let pNum = parseFloat(numString);
     let kilograms = pNum * .453592;
     kilograms = kilograms.toFixed(1);
-
     if (isNaN(pNum))
     {
         alert("Not a number!");
@@ -79,7 +78,7 @@ function calculateLitres()
 {
     let numString = prompt("Convert gallons to litres");
     let pNum = parseFloat(numString);
-    let litres = gallons * 3.78541;
+    let litres = pNum * 3.78541;
     litres = litres.toFixed(2);
     if (isNaN(pNum))
     {
@@ -87,6 +86,6 @@ function calculateLitres()
     }
     else
     {
-        alert(pNum + " gallons is equal to " + litres + ".");
+        alert(pNum + " gallons is equal to " + litres + "litres.");
     }
 }

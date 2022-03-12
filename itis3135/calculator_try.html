@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8" />
+    <title>Justin Privett | ITIS 3135 | Jet Parrot Calculator Attempt</title>
+    <link href = "styles/default.css" type = "text/css"  rel = "stylesheet">
+    <script src ="scripts/calculator_try.js"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Activity #7 - Calculator Attempt</h2>
+        <table class ="calculator_try">
+            <tr>
+                <td colspan ="3"><input class ="display-box" type ="text" id ="result"></td>
+                <td><input value ="AC" onclick = "clearDisplay()"></td>
+            </tr>
+            <tr>
+                <td> <input type ="button" value = "1" onclick = "display('1')"></td>
+                <td> <input type ="button" value = "2" onclick = "display('2')"></td>
+                <td> <input type ="button" value = "3" onclick = "display('3')"></td>
+                <td> <input type ="button" value = "/" onclick = "display('/')"></td>
+            </tr>
+            <tr>
+                <td> <input type ="button" value = "1" onclick = "display('4')"></td>
+                <td> <input type ="button" value = "2" onclick = "display('5')"></td>
+                <td> <input type ="button" value = "3" onclick = "display('6')"></td>
+                <td> <input type ="button" value = "/" onclick = "display('*')"></td>
+            </tr>
+            <tr>
+                <td> <input type ="button" value = "1" onclick = "display('7')"></td>
+                <td> <input type ="button" value = "2" onclick = "display('8')"></td>
+                <td> <input type ="button" value = "3" onclick = "display('9')"></td>
+                <td> <input type ="button" value = "/" onclick = "display('-')"></td>
+            </tr>
+            <tr>
+                <td> <input type ="button" value = "1" onclick = "display('0')"></td>
+                <td> <input type ="button" value = "2" onclick = "display('.')"></td>
+                <td> <input type ="button" value = "3" onclick = "display('=')"></td>
+                <td> <input type ="button" value = "/" onclick = "display('+')"></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+</body>
+</html>

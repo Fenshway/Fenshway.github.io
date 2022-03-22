@@ -51,6 +51,6 @@ function displaySalary()
         createTable += "<tr><td>"+ employees[i] + "</td><td>$" + salaries[i].toFixed(2).toLocaleString() + "</td></tr>";
     }
     createTable += "</table>";
-    document.getElementById("results_table").innerHTML = createTable;
+    $("results_table").innerHTML = createTable;
 
 }

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang ="en">
 <head>
-    <meta charset = "utf-8" />
+    <meta charset ="utf-8" />
     <title>Justin Privett | ITIS 3135 | Jet Parrot Course Contract</title>
-    <link href = "styles/default.css" type = "text/css"  rel = "stylesheet"> 
-    <script src ="scripts/calculator_fcc.js"></script> 
+    <link href ="styles/default.css" type ="text/css"  rel ="stylesheet"> 
 </head>
 <body>
     <header>
@@ -12,11 +11,33 @@
     </header>
     <main>
         <h2>Activity # 8 - Arrays</h2>
-        <p>Currently working on this.</p>
+        <form class ="array-form">
+            <label class ="array-form" for ="employee">Employee:</label>
+            <select form ="employee" id ="employee">
+                <option>Hyunhee Na</option>
+                <option>Bobby Thornberry</option>
+                <option>Randall Washinington</option>
+                <option>Sarah Garcia</option>
+                <option>Jieun Lee</option>
+                <option>Ronald Hampus</option>
+                <option>Conner McDoyle</option>
+                <option>Richard Cranium</option>
+            </select>
+            <label for ="salary">Salary:</label>
+            <input type ="text" id ="salary" passholder ="Enter Salary"/><br><br>
+            <input onclick ="addSalary()" type="button" value="Add Salary"></input>
+            <input onclick ="displayResults()" type="button" value ="Display Results"></input>
+            <input onclick ="displaySalary()" type="button" value ="Display Salary"></input>
+        </form>
+
+        <div class ="arrays_div" id ="results"></div>
+        <table class ="arrays_table" id ="results_table"></table>
+
     </main>
     <footer>
-        <div data-include="components/footer.html"></div>
+        <div data-include ="components/footer.html"></div>
     </footer>
-    <script src="scripts/include.js"></script>
+    <script src ="scripts/include.js"></script>
+    <script src ="scripts/arrays.js"></script> 
 </body>
 </html>

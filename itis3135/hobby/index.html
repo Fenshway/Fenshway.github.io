@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8" />
+    <title>Justin Privett | ITIS 3135 | Jet Parrot Midterm</title>
+    <link href ="styles/default.css" type ="text/css"  rel ="stylesheet"> 
+        
+    <script>
+        let pages = ['home', 'who', 'when', 'where', 'how', 'why'];
+
+        function displayHide(page) {
+            for (let i = 0; i < pages.length; i++) {
+                if (page === pages[i]) 
+                {
+                    document.getElementById(pages[i]).style.display = 'initial';
+                }
+                else 
+                {
+                    document.getElementById(pages[i]).style.display = 'none';
+                }
+            }
+        }
+    </script> 
+</head>
+<body>
+    <header>
+        <h1>Justin Privett | ITIS 3135 | Jet Parrot</h1>
+        <h2>Midterm Assignment</h2>
+        <ul id ="home_menu">
+            <li onclick ="displayHide('home')">Home</li>
+            <li onclick ="displayHide('who')">Who</li>
+            <li onclick ="displayHide('when')">When</li>
+            <li onclick ="displayHide('where')">Where</li>
+            <li onclick ="displayHide('how')">How</li>
+            <li onclick ="displayHide('why')">Why</li>
+        </ul>
+    </header>
+    <section id ="home">
+        <div class ="what container">
+            <h2>Homepage</h2>
+            <figure>
+                <img src="images/3135kb2.PNG">
+                <figcaption>Keycult No. 2/65</figcaption>
+            </figure>
+            <p>
+                Welcome to my Midterm homepage. My goal for this assignment is to hopefully push you away from poorly constructed mechanical keyboards, or even worse, laptop keyboards...
+                That beautiful keyboard above is one of the nicest keyboards made to date, likewise, it carries a hefty pricetag. Keycults can run easily into the thousands. However, there are
+                a lot of affordable options that are very high quality. I hope after going through my assignment, I at least partiallity intrigued you into look deeper into this hobby and
+                community.
+            </p>
+        </div>
+    </section>
+    
+    <section id ="who" style="display: none">
+        <div class ="who_container">
+            <h2>Who</h2>
+            <figure>
+                <img src="images/3135me.PNG">
+                <figcaption>Me</figcaption>
+            </figure>
+            <p>
+                There's not really much I'd like to about myself. I'm just a guy trying to get through school pace who may or may not be creating a website about mechanical keyboards.
+                at a reasonable pace.
+            </p>
+        </div>
+    </section>
+
+    <section id ="when" style="display: none">
+        <div class ="when_container">
+            <h2>When</h2>
+            <figure>
+                <img src="images/3135kb6.jpg">
+                <figcaption>OwlabMr Suit. My current project</figcaption>
+            </figure>
+            <p>
+                I first became interested in custom keyboards around 1 or 2 years ago. After being introduced to the custom mechanical keyboard scene, I became extremely dissatisfied 
+                with the feel and sound of my corsair board at the time. A keyboard which many enthusiasts, including myself, would consider poorly made and criminally overpriced. 
+                These "gamer" brands focus only on marketing while spewing out mass produced garbage with no room for customization. Especially in today's market, where the custom keyboard
+                hobby is growing rapidly, there are countless budget boards that rival "gamer" brand keyboards in price while being of much higher quality with high customizability. 
+            </p>
+        </div>
+    </section>
+
+    <section id ="where" style="display: none">
+        <div class ="where_container">
+            <h2>Where</h2>
+            <figure>
+                <img src="images/3135kb7.jpg">
+                <figcaption>A good place to start</figcaption>
+            </figure>
+            <p>
+                For those who want to get into the hobby or just searching for more information, r/MechanicalKeyboards is a decent place to start. However, you will find much more information
+                in vendor discords or from youtube channels. Make sure you are able to tell genuine information apart from advertisement though. On the plus side, many of the "bought" youtubers
+                are purchased from "gamer" brands anyways which won't really affect you when trying to learn about the custom keyboard market. A good place to start is c/TaehaTypes or c/AndyVNguyen.
+            </p>
+        </div>
+    </section>
+
+    <section id ="how" style="display: none">
+        <div class ="how_container">
+            <h2>How</h2>
+            <figure>
+                <img src="images/3135kb5.jpg">
+                <figcaption>GMK Bingsu keycap set. Currently waiting to recieve this. Only 1 more year...</figcaption>
+            </figure>
+            <p>
+                When getting started, there is quite a large learning curve. You absolutely should not make a purchase initially without first doing sufficient research. This is
+                crucial as many entering the hobby may purchase mismatching parts or mistake a group buy for in-stock units. Many keyboards and keycap sets start with a group buy phase,
+                in which customers will order and pay for the unit and recieve it later down the line at a specified date. Keyboards are often sold with a lead time of a few weeks to a few months,
+                while many highend keycap sets can take up to 2 years. That is why research is critical. Don't let the long lead times push you away as there are many high quality affordable options
+                that are in-stock or doing waves of in-stock runs each month in today's market.
+            </p>
+        </div>
+    </section>
+
+    <section id = "why" style="display: none">
+        <div class ="why_container">
+            <h2>Why</h2>
+            <figure>
+                <img src="images/3135kb3.jpg">
+                <img src="images/3135.kb4.jpg">
+                <figcaption>OwlabMr Suit. My current project</figcaption>
+            </figure>
+            <p>
+                Those in the Computer Science field likely spend a minimum of 50 hours per week using a keyboard. The difference in typing experience is very apparent between a bad mechanical keyboard or
+                laptop keyboard compared to a nice custom. With all of this time spent utilizing a keyboard each week, why not invest in making your experience more enjoyable?
+            </p>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href ="https://webpages.charlotte.edu/jprivet6/">UNCC Home |</a>  
+            <a href ="https://github.com/Fenshway"> github |</a>  
+            <a href ="https://Fenshway.github.io"> github.io |</a>
+            <a href ="https://jsfiddle.net/user/Fenshway/fiddles/"> jsfddle |</a>
+            <a href ="https://www.freecodecamp.org/fenshway"> freecodecamp |</a>
+            <a href ="https://www.codecademy.com/profiles/fenshway"> codeacademy |</a>
+            <a href ="https://www.linkedin.com/in/justin-privett-7a4a78209/"> linkedin</a>
+        </nav>
+        <div>Created by<a href="jprivettdesigns.com/">Jprivett Design Inc.</a>&copy;2022</div><br>
+        <div>
+            <a href ="https://validator.w3.org/check?uri=" id ="validation_link_html">
+            <img src ="images/button_validation_html5.png" alt ="html validation button"></a>
+            <a href ="https://jigsaw.w3.org/css-validator/check/referer?uri=" id ="validation_link_css">
+            <img src ="images/button_validation_css.png" alt ="css validation button"></a>
+        </div>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </footer>
+</body>
+</html>

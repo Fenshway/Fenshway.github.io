@@ -1,0 +1,56 @@
+h1, h2
+{
+    text-align: center;
+}
+ul
+{
+    list-style: none;
+    text-align: center;
+}
+a:hover, li:hover
+{
+    color: white;
+}
+li
+{
+    color: #FE5F55;
+    display: inline;
+    font-size: 20px;
+    padding: 20px;
+    font-style: bold;
+}
+body
+{
+    margin: 0px 375px;
+    padding: 0px;
+    background: #D0F0C0;;
+    color: #323031;
+    font-family: "Arial", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section img
+{
+    height: 400px;
+    width: auto;
+}
+figure, figcaption
+{
+    text-align: center;
+}
+footer
+{
+    text-align: center;
+}
+footer nav
+{
+    padding: 20px 20px;
+}
+footer a, main a
+{
+    color: #FE5F55;
+    text-decoration: none;
+}
+footer img
+{
+    padding: 0px 5px;
+}

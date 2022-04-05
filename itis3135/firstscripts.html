@@ -4,6 +4,8 @@
     <meta charset = "utf-8" />
     <title>Justin Privett | ITIS 3135 | Jet Parrot First JS</title>
     <link href ="styles/default.css" type = "text/css"  rel = "stylesheet">
+    <script src="scripts/include.js"></script>
+    <script src ="scripts/defaultscripts.js"></script>
 </head>
 <body>
     <header>
@@ -11,32 +13,31 @@
     </header>
     <main>
         <h2>First JS Page</h2>
-        <h2 id ="jpGreeting"> </h2>
+        <h2 id ="jpGreeting">Hello!</h2>
         <h3>
             <script>
                 jpDate();
             </script>
         </h3>
-        <p></p>
-        <p>
-            <div><button onclick ="scriptTest()">Test me!</button></div>
-            <div>What is your name? <input type ="text" name ="name" id ="inputName"> </div><br>
-            <div>How are you doing today? <input type ="text" name ="mood" id ="inputMood"></div><br>
-            <button onclick ="displayGreeting();">Submit</button>
-        </p>
-        <p>
-            Imperial to metric conversions.<br>
-            <button  onclick ="calculateCm()" type="button">Calculate Centimeters</button>
-            <button  onclick ="calculateCelsius()" type="button">Calculate Celsius</button>
-            <button  onclick ="calculateKMH()" type="button">Calculate KM/h</button>
-            <button  onclick ="calculateKG()" type="button">Calculate Kilograms</button>
-            <button  onclick ="calculateLitres()" type="button">Calculate Litres</button>
-        </p>
+
+        <div><button onclick ="scriptTest()">Test me!</button></div></br>
+
+        <div>What is your name? <input type ="text" name ="name" id ="inputName"> </div><br>
+        <div>How are you doing today? <input type ="text" name ="mood" id ="inputMood"></div><br>
+        <button onclick ="displayGreeting();">Submit</button>
+
+        <p>Imperial to metric conversions.</p>
+
+        <button  onclick ="calculateCm()" type="button">Calculate Centimeters</button>
+        <button  onclick ="calculateCelsius()" type="button">Calculate Celsius</button>
+        <button  onclick ="calculateKMH()" type="button">Calculate KM/h</button>
+        <button  onclick ="calculateKG()" type="button">Calculate Kilograms</button>
+        <button  onclick ="calculateLitres()" type="button">Calculate Litres</button>
+
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
-    <script src="scripts/include.js"></script>
-    <script src ="scripts/defaultscripts.js"></script>
+
 </body>
 </html>

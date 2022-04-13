@@ -229,3 +229,22 @@ footer img
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Slideshow assigmnet */
+.slideshow-container
+{
+    width: 28%;
+    margin: auto;
+    border: 5px solid black; 
+    overflow: hidden;
+}
+.slideshow-slide
+{
+    display: flex;
+}
+.slideshow
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

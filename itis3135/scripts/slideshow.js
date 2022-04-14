@@ -1,15 +1,15 @@
-const slide = document.querySelector('.slideshow-slide');
-const slideImages = document.querySelectorAll('.slideshow-slide img');
+const slide = document.querySelector(".slideshow-slide");
+const slideImages = document.querySelectorAll(".slideshow-slide img");
 
-const prevButton = document.querySelector('#prevButton');
-const nextButton = document.querySelector('#nextButton');
+const prevButton = document.querySelector("#prevButton");
+const nextButton = document.querySelector("#nextButton");
 
 let counter = 1;
 const size = slideImages[0].clientWidth;
 
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-nextButton.addEventListener('click', function()
+nextButton.addEventListener("click", function()
 {
     if (counter >= slideImages.length - 1) return;
     slide.style.transition = "transform 0.4s ease-in-out";
@@ -17,7 +17,7 @@ nextButton.addEventListener('click', function()
     slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
-prevButton.addEventListener('click', function()
+prevButton.addEventListener("click", function()
 {
     if (counter <= 0) return;
     slide.style.transition = "transform 0.4s ease-in-out";

@@ -233,7 +233,8 @@ footer img
 /* Slideshow assigmnet */
 .slideshow-container
 {
-    width: 28%;
+    width: 525px;
+    height: auto;
     margin: auto;
     border: 5px solid black; 
     overflow: hidden;
@@ -247,4 +248,13 @@ footer img
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.ss-button-container
+{
+    text-align: center;
+    margin-top: 15px;
+}
+.ss-button-container button
+{
+    width: 150px;
 }

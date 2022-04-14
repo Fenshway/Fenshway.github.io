@@ -4,12 +4,13 @@
     <meta charset = "utf-8" />
     <title>Justin Privett | ITIS 3135 | Jet Parrot Slideshow</title>
     <link href = "styles/default.css" type = "text/css"  rel = "stylesheet"> 
-    <script src="scripts/slideshow.js"></script>
 </head>
 <body>
+
     <header>
         <div data-include="components/header.html"></div>
     </header>
+    
     <main>
         <h2>Activity #9 - Slideshow</h2>
         <div class ="slideshow-container">
@@ -24,14 +25,18 @@
                 <img class= "slideshow" src ="images/slideshow1.jpg" id ="firstClone" alt ="">
             </div>
         </div>
-
-        <button id ="prevButton">Prev</button>
-        <button id ="nextButton">Next</button>
-        <div><button onclick ="scriptTest()">Test me!</button></div></br>
+        <div class ="ss-button-container">
+            <button id ="prevButton">Previous</button>
+            <button id ="nextButton">Next</button>
+        </div>
     </main>
+
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
+
     <script src="scripts/include.js"></script>
+    <script src="scripts/slideshow.js"></script>
+
 </body>
 </html>

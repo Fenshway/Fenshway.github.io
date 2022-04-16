@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -9,7 +8,7 @@
   <meta name="Description" content="Testing website for accessibility.">
 
   <!-- css -->
-  <link href = "styles/default.css" type = "text/css"  rel = "stylesheet"> 
+  <link rel="stylesheet" href="Activity_Accessibility.css">
   <title>Test For Accessibility</title>
 
 </head>
@@ -19,7 +18,7 @@
     <h1>Candle Delight</h1>
   </header>
   <main>
-    <h2>We are delighted to delight you with Candle Delight - test</h2>
+    <h2>We are delighted to delight you with Candle Delight</h2>
     <table class="center">
         <caption></caption>
         <thead>
@@ -40,7 +39,7 @@
                   <li>Small and slender forms allow you to add as many or as few of them to a dessert you desire</li>
                   <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
                 </ol>
-              </td>   
+              </td>
             </tr>
             <tr>
               <th>Votives</th>
@@ -63,20 +62,41 @@
                   </td>
                 </tr>
         </tbody>
-      </table>
+      </table><br>
      <!--Add the form here-->
-    
-   
-    <div class="whitespace"></div>
-    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
-    <div class="whitespace"></div>
 
-    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
-      color and background color passes WCAG standard!</a>
+      <form>
+        <h2>Enter your name and phone number to win a gift!</h2>
+        <label for ="name">Name:</label>
+        <input type ="name" id ="name" required />
+        <label for ="phone">Phone Number:</label>
+        <input type ="phone" id ="phone" required /><br><br>
+        <input type="submit" value="Submit" id="submit"><br>
+
+        <div class="whitespace"></div>
+        <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+        <div class="whitespace"></div>
+    
+        <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+          color and background color passes WCAG standard!</a><br><br>
+
+      </form>
+
+   
+
   </main>
 
   <footer>
-
+    <div>
+      <a href ="https://validator.w3.org/check?uri=" id ="validation_link_html">
+      <img src ="../images/button_validation_html5.png" alt ="html validation button"></a>
+      <a href ="https://jigsaw.w3.org/css-validator/check/referer?uri=" id ="validation_link_css">
+      <img src ="../images/button_validation_css.png" alt ="css validation button"></a>
+  </div>
+  <script>
+      document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
   </footer>
 </body>
 </html>

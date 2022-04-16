@@ -1,8 +1,7 @@
 function getShape()
 {
     let numString = prompt("The Jet Parrots would like you to enter a number 1-10 to find out which polygon correlates with your number.");
-    let pNum = parseInt(numString);
-
+    let pNum = parseFloat(numString);
     let polygon = "out of bounds";
 
     switch (pNum)

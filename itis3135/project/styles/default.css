@@ -16,5 +16,22 @@ nav a
 body
 {
     background-color: aliceblue;
-
+}
+form
+{
+    text-align: center;
+}
+form div
+{
+    font-size: 20px;
+    padding: 10px;
+}
+.general
+{
+    width: 20%;
+}
+#big
+{
+    width: 20%;
+    height: 100px;
 }

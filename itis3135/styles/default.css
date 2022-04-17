@@ -258,3 +258,27 @@ footer img
 {
     width: 150px;
 }
+
+/* image swap */
+#img-container
+{
+    text-align: center;
+}
+#img_list li
+{
+    display: inline;
+}
+.css-sucks
+{
+    list-style-type: none;
+    display: block;
+    display: inline;
+}
+.img-li
+{
+    height: 200px;
+}
+#why-wont-this-center
+{
+    text-align: center;
+}

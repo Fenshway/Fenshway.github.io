@@ -11,11 +11,30 @@
     </header>
     <main>
         <h2>Activity #10 - Image Swap Application</h2>
-        <p>Still working on this</p>
-    </main>
+	    <div id="img-container">
+            <p>Try clicking on one of the images below</p>
+            <ul id="image_list">
+                <li class="css-sucks">
+                    <img class="img-li" id="img1" src="images/slideshow1.jpg" alt="" onclick="swap(document.getElementById('img1'))" title="Dakgalbi"></li>
+                <li class="css-sucks">
+                    <img class="img-li" id="img2" src="images/slideshow2.jpg" alt="" onclick="swap(document.getElementById('img2'))" title="Salmon"></li>
+                <li class="css-sucks">
+                    <img class="img-li" id="img3" src="images/slideshow3.jpg" alt="" onclick="swap(document.getElementById('img3'))" title="Waffle"></li>
+                <li class="css-sucks">
+                    <img class="img-li" id="img4" src="images/slideshow4.jpg" alt="" onclick="swap(document.getElementById('img4'))" title="Kbbq"></li>
+                <li class="css-sucks">
+                    <img class="img-li" id="img5" src="images/slideshow5.jpg" alt="" onclick="swap(document.getElementById('img5'))" title="Ramen"></li>
+                <li class="css-sucks">
+                    <img class="img-li" id="img6" src="images/slideshow6.jpg" alt="" onclick="swap(document.getElementById('img6'))" title="Chicken and Raw Fish"></li>
+            </ul>
+        </div>
+	    <h2 id="caption">Dakgabli</h2>               
+	    <p id="why-wont-this-center"><img class="swap-output" src="images/slideshow1.jpg" alt="" id="image"></p>
+	</main>	
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/image-swap.js"></script>
     <script src="scripts/include.js"></script>
 </body>
 </html>

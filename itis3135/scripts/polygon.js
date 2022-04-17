@@ -3,7 +3,8 @@ function getShape()
     let numString = prompt("The Jet Parrots would like you to enter a number 1-10 to find out which polygon correlates with your number.");
     let pNum = parseFloat(numString);
     let polygon = "out of bounds";
-
+    pNum = Math.abs(pNum);
+    pNum = Math.round(pNum);
     switch (pNum)
     {
         case 1:

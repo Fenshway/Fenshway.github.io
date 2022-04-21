@@ -16,6 +16,7 @@ nav a
 body
 {
     background-color: aliceblue;
+    margin: 25px 500px 75px;
 }
 form
 {
@@ -34,4 +35,8 @@ form div
 {
     width: 20%;
     height: 100px;
+}
+p
+{
+    font-size: 20px;
 }

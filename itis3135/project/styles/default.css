@@ -18,6 +18,13 @@ h1, h2
     text-align: center;
     font-size: 25px;
 }
+figure
+{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 body
 {
     background-color: aliceblue;
@@ -79,4 +86,33 @@ th {
 table.center {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Slide show */
+.slideshow-container
+{
+    width: 525px;
+    height: auto;
+    margin: auto;
+    border: 5px solid black; 
+    overflow: hidden;
+}
+.slideshow-slide
+{
+    display: flex;
+}
+.slideshow
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ss-button-container
+{
+    text-align: center;
+    margin-top: 15px;
+}
+.ss-button-container button
+{
+    width: 150px;
 }

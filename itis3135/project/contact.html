@@ -7,19 +7,12 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href ="index.html">Home |</a>
-            <a href ="form.html">Application |</a>
-            <a href ="about.html">About Us |</a>
-            <a href ="racing.html">Upcoming Races |</a>
-            <a href ="contact.html">Contact Us</a>
-        </nav>
-        <h1>Contact Us</h1>
-        <h2>Please provide your name, email and a brief description regarding your questions or concerns and we will respond via email as soon as possible.</h2>
+        <div data-include="components/header.html"></div>
     </header>
 
     <main>
-
+        <h1>Contact Us</h1>
+        <h2>Please provide your name, email and a brief description regarding your questions or concerns and we will respond via email as soon as possible.</h2>
         <form>
             <div>
                 <label for="name">Name</label><br>
@@ -37,7 +30,8 @@
     </main>
 
     <footer>
-
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/include.js"></script>
 </body>
 </html>

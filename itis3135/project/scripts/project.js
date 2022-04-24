@@ -40,3 +40,10 @@ slide.addEventListener('transitionend', function()
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+function bugFix()
+{
+let counter = 1;
+const size = slideImages[0].clientWidth;
+
+slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+}

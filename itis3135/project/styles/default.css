@@ -95,6 +95,7 @@ table.center {
     height: auto;
     margin: auto;
     border: 5px solid black; 
+    overflow: hidden;
 }
 .slideshow-slide
 {

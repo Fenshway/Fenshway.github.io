@@ -1,10 +1,10 @@
-/*const slide = document.querySelector(".slideshow-slide");
+const slide = document.querySelector(".slideshow-slide");
 const slideImages = document.querySelectorAll(".slideshow-slide img");
 
 const prevButton = document.querySelector("#prevButton");
 const nextButton = document.querySelector("#nextButton");
 
-
+/*
 let counter = 1;
 const size = slideImages[0].clientWidth;
 

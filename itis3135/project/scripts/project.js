@@ -40,10 +40,17 @@ slide.addEventListener('transitionend', function()
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+
 function bugFix()
 {
-let counter = 1;
-const size = slideImages[0].clientWidth;
+slide = document.querySelector(".slideshow-slide");
+slideImages = document.querySelectorAll(".slideshow-slide img");
+
+prevButton = document.querySelector("#prevButton");
+nextButton = document.querySelector("#nextButton");
+
+counter = 1;
+size = slideImages[0].clientWidth;
 
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }

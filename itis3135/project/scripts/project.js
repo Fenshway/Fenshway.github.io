@@ -43,8 +43,8 @@ slide.addEventListener('transitionend', function()
 
 function bugFix()
 {
-slide = document.querySelector(".slideshow-slide");
-slideImages = document.querySelectorAll(".slideshow-slide img");
+const slide = document.querySelector(".slideshow-slide");
+const slideImages = document.querySelectorAll(".slideshow-slide img");
 
 prevButton = document.querySelector("#prevButton");
 nextButton = document.querySelector("#nextButton");

@@ -54,3 +54,7 @@ size = slideImages[0].clientWidth;
 
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
+
+$(document).ready(function() {
+    $("#accordion").accordion({collapsible: true, active: false});
+});

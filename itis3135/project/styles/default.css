@@ -1,4 +1,4 @@
-nav
+header nav
 {
     width: 50%;
     overflow: auto;
@@ -98,6 +98,13 @@ footer a, main a
 footer img
 {
     padding: 0px 5px;
+}
+#application
+{
+    position: relative;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
 }
 
 /* Form */

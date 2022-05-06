@@ -1,18 +1,43 @@
-header
-{
-    text-align: center;
-    font-size: 25px;
-}
 nav
 {
-    padding: 20px 10px;
-    text-decoration: none;
+    width: 100%;
+    overflow: auto;
+    background: purple;
 }
-nav a
+header ul
 {
-    color: #FE5F55;
-    text-decoration: none;
+    padding: 0;
+    margin: 0 0 0 250px;
+    list-style: none;
 }
+header li
+{
+    float: left;
+}
+header li a
+{
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: arial;
+    color: #FE5F55;
+    text-align: center;
+}
+header li a:hover
+{
+    background: white;
+    text-transform: uppercase;
+}
+header img
+{
+    width: 10px;
+    height: auto;
+    position: absolute;
+    margin-top: 5px;
+
+}
+
 h1, h2
 {
     text-align: center;

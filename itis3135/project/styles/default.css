@@ -1,5 +1,6 @@
 header nav
 {
+    margin: 0px;
     width: 50%;
     overflow: auto;
     background: purple !important;

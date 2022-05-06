@@ -1,8 +1,3 @@
-
-$(document).ready(function() {
-    $("#accordion").accordion({collapsible: true, active: false});
-});
-
 const slide = document.querySelector(".slideshow-slide");
 const slideImages = document.querySelectorAll(".slideshow-slide img");
 

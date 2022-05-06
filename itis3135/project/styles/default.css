@@ -35,7 +35,6 @@ header img
     height: auto;
     position: absolute;
     margin-top: 5px;
-
 }
 
 h1, h2
@@ -50,10 +49,11 @@ figure
     margin-left: auto;
     margin-right: auto;
 }
-body
+body main
 {
     background-color: aliceblue;
-    margin: 25px 500px 0px;
+    margin-left: 400px;
+    margin-right: 400px;
 }
 form
 {

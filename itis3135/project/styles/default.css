@@ -52,12 +52,10 @@ p
 {
     font-size: 20px;
 }
-/*
 footer
 {
     text-align: center; 
 }
-*/
 footer a, main a
 {
     color: #FE5F55;
@@ -117,13 +115,4 @@ table.center {
 .ss-button-container button
 {
     width: 150px;
-}
-
-footer {
-
-text-align: center;
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 2.5rem;            /* Footer height */
 }

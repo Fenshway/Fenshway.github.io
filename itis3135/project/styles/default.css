@@ -31,10 +31,11 @@ header li a:hover
 }
 header img
 {
-    width: 10px;
+    width: 100px;
     height: auto;
     position: absolute;
     margin-top: 5px;
+    margin-left: 5px;
 }
 header
 {

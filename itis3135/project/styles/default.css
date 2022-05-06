@@ -1,8 +1,9 @@
 nav
 {
-    width: 100%;
+    width: 50%;
     overflow: auto;
     background: purple;
+    display: center;
 }
 header ul
 {

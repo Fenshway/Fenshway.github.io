@@ -81,8 +81,9 @@ xhttp.send();
 
 function preparePage()
 {
+    alert("works");
     bugFix();
     loadHeader();
     loadFooter();
-    alert("works");
+
 }

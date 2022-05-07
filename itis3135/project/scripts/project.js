@@ -78,11 +78,3 @@ function loadFooter() {
     xhttp.open("GET", "components/footer.html", true);
     xhttp.send();
 }
-
-function preparePage()
-{
-    alert("works updated 2.5");
-    bugFix();
-    loadHeader();
-    loadFooter();
-}

@@ -8,7 +8,7 @@
 <body onload="bugFix()">
 
     <div data-include="components/header.html"></div>
-    
+
     <main>
         <div id="container"></div>
             <div id="main">
@@ -36,7 +36,22 @@
         </div>
     </main>
 
-    <div data-include="components/footer.html"></div>
+    <div id="ajaxFooter">This will be replaced</div>
+    <button onclick="loadFooter()">button</button>
+
+    <script>
+        function loadFooter() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("ajaxFooter").innerHTML =
+            this.responseText;
+            }
+        };
+        xhttp.open("GET", "components/footer.html", true);
+        xhttp.send();
+        }
+    </script>
 
     <script src="scripts/include.js"></script>
     <script src="scripts/project.js"></script>

@@ -133,7 +133,7 @@ footer img
 /* Form */
 td,
 th {
-  border: 1px solid black;
+  border: 1px solid #343434;
   padding: 8px;
   background-color:#262626;
   color:powderblue;
@@ -158,7 +158,7 @@ table.center {
     width: 525px;
     height: auto;
     margin: auto;
-    border: 5px solid black; 
+    border: 5px solid #343434; 
     overflow: hidden;
 }
 .slideshow-slide

@@ -68,22 +68,39 @@ function loadHeader() {
 }
 
 function loadFooter() {
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-    document.getElementById("ajaxFooter").innerHTML =
-    this.responseText;
-    }
-};
-xhttp.open("GET", "components/footer.html", true);
-xhttp.send();
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("ajaxFooter").innerHTML =
+        this.responseText;
+        }
+    };
+    xhttp.open("GET", "components/footer.html", true);
+    xhttp.send();
 }
 
-function preparePage()
+/*function preparePage()
 {
     alert("works updated 2.0");
     this.bugFix();
     this.loadHeader();
     this.loadFooter();
 
+}*/
+function addLoadEvent(func) { 
+    var oldonload = window.onload; 
+    if (typeof window.onload != 'function') { 
+      window.onload = func; 
+    } else { 
+      window.onload = function() { 
+        if (oldonload) { 
+          oldonload(); 
+        } 
+        func(); 
+      } 
+    } 
 }
+   
+addLoadEvent(bugFix); 
+addLoadEvent(loadHeader); 
+addLoadEvent(loadFooter);

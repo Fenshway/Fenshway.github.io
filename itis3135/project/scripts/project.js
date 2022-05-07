@@ -50,8 +50,6 @@ slide.addEventListener('transitionend', function()
         counter = slideImages.length - counter;
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    loadFooter();
-    loadHeader();
 });
 }
 

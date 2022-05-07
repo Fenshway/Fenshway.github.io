@@ -7,14 +7,14 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 </head>
-<body>
+<body onload="bugFix()">
 
    <!-- <div data-include="components/header.html"></div> -->
     <div id="ajaxHeader">This will be replaced upda 2.5</div>
     <main>
         <div id="container"></div>
             <div id="main">
-                <p>yes</p>
+                <p>yesewwf</p>
                 <p>Welcome to the Oriental Presbyterian Sailing Organizations website! We have been operating in the coastal region of North Carolina since 2013 and are proud 
                     of our achievments in fostering a positive community of personal growth. We are always looking to grow our community so please look around our website and if 
                     you are interested in becoming a member, or just want to chat further, please reach out to us. Have a blessed day!
@@ -45,36 +45,13 @@
     <button onclick="loadFooter()">button</button>
 
     <button onclick="loadHeader()">button</button>
-   <!---
-    <script>
-        function loadHeader() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("ajaxHeader").innerHTML =
-            this.responseText;
-            }
-        };
-        xhttp.open("GET", "components/header.html", true);
-        xhttp.send();
-        }
-    </script>
 
-    <script>
-        function loadFooter() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("ajaxFooter").innerHTML =
-            this.responseText;
-            }
-        };
-        xhttp.open("GET", "components/footer.html", true);
-        xhttp.send();
-        }
-    </script> -->
-
+    
     <script src="scripts/include.js"></script>
     <script src="scripts/project.js"></script>
+    <script>
+        loadFooter();
+        loadHeader();
+    </script>
 </body>
 </html>

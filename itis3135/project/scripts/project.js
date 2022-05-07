@@ -41,7 +41,7 @@ slide.addEventListener('transitionend', function()
     }
 });
 
-/*function bugFix()
+function bugFix()
 {
 slide = document.querySelector(".slideshow-slide");
 slideImages = document.querySelectorAll(".slideshow-slide img");
@@ -85,46 +85,4 @@ function preparePage()
     bugFix();
     loadHeader();
     loadFooter();
-} */
-
-$(document).ready(function() {
-    function bugFix()
-    {
-    slide = document.querySelector(".slideshow-slide");
-    slideImages = document.querySelectorAll(".slideshow-slide img");
-
-    prevButton = document.querySelector("#prevButton");
-    nextButton = document.querySelector("#nextButton");
-
-    counter = 1;
-    size = slideImages[0].clientWidth;
-
-    slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
-
-    function loadHeader() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("ajaxHeader").innerHTML =
-            this.responseText;
-            }
-        };
-        xhttp.open("GET", "components/header.html", true);
-        xhttp.send();
-    }
-
-    function loadFooter() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("ajaxFooter").innerHTML =
-            this.responseText;
-            }
-        };
-        xhttp.open("GET", "components/footer.html", true);
-        xhttp.send();
-    }
-
-
-});
+}

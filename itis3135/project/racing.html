@@ -4,10 +4,11 @@
     <meta charset ="utf-8" />
     <title>Oriental Presbyterian Sailing Race Schedule</title>
     <link href ="styles/default.css" type ="text/css"  rel ="stylesheet"> 
+    <script src="scripts/project.js"></script>
 </head>
 <body>
     
-    <div data-include="components/header.html"></div>
+    <div id="ajaxHeader">This will be replaced upda 2.5</div>
 
     <main>
         <div id="container"></div>
@@ -69,8 +70,11 @@
         </div>
     </main>
 
-    <div data-include="components/footer.html"></div>
+    <div id="ajaxFooter">This will be replaced</div>
+    <script>
+        loadHeader();
+        loadFooter();
+    </script>
 
-    <script src="scripts/include.js"></script>
 </body>
 </html>

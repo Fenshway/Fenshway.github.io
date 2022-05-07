@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="scripts/project.js"></script>
 </head>
 <body onload="bugFix()">
 
-    <div data-include="components/header.html"></div>
+    <div id="ajaxHeader">This will be replaced upda 2.5</div>
 
     <main>
         <div id="container"></div>
@@ -87,9 +88,12 @@
         </div>
     </main>
 
-    <div data-include="components/footer.html"></div>
+    <div id="ajaxFooter">This will be replaced</div>
 
-    <script src="scripts/include.js"></script>
     <script src="scripts/accordion.js"></script>
+    <script>
+        loadHeader();
+        loadFooter();
+    </script>
 </body>
 </html>

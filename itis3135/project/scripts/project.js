@@ -78,10 +78,14 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "components/footer.html", true);
 xhttp.send();
 }
-
+function yes()
+{
+    alert("works")
+}
 function preparePage()
 {
-    bugFix()
-    loadHeader()
-    loadFooter()
+    bugFix();
+    loadHeader();
+    loadFooter();
+    yes();
 }

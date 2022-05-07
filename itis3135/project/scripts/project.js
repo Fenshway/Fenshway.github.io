@@ -1,11 +1,22 @@
-const slide = document.querySelector(".slideshow-slide");
-const slideImages = document.querySelectorAll(".slideshow-slide img");
+var slide;
+var slideImages;
 
-const prevButton = document.querySelector("#prevButton");
-const nextButton = document.querySelector("#nextButton");
+var prevButton;
+var nextButton;
 
-let counter = 1;
-const size = slideImages[0].clientWidth;
+let counter;
+var size;
+
+function bugFix()
+{
+slide = document.querySelector(".slideshow-slide");
+slideImages = document.querySelectorAll(".slideshow-slide img");
+
+prevButton = document.querySelector("#prevButton");
+nextButton = document.querySelector("#nextButton");
+
+counter = 1;
+size = slideImages[0].clientWidth;
 
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
@@ -39,20 +50,9 @@ slide.addEventListener('transitionend', function()
         counter = slideImages.length - counter;
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
+    loadFooter();
+    loadHeader();
 });
-
-function bugFix()
-{
-slide = document.querySelector(".slideshow-slide");
-slideImages = document.querySelectorAll(".slideshow-slide img");
-
-prevButton = document.querySelector("#prevButton");
-nextButton = document.querySelector("#nextButton");
-
-counter = 1;
-size = slideImages[0].clientWidth;
-
-slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 
 function loadHeader() {

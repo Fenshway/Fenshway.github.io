@@ -54,3 +54,9 @@ size = slideImages[0].clientWidth;
 
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
+
+$(document).ready(function () {
+    $("#submitBtn").click(function () {
+        alert("Form Submission Successful.!");
+    });
+});

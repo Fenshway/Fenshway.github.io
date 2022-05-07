@@ -79,28 +79,10 @@ function loadFooter() {
     xhttp.send();
 }
 
-/*function preparePage()
+function preparePage()
 {
-    alert("works updated 2.0");
-    this.bugFix();
-    this.loadHeader();
-    this.loadFooter();
-
-}*/
-function addLoadEvent(func) { 
-    var oldonload = window.onload; 
-    if (typeof window.onload != 'function') { 
-      window.onload = func; 
-    } else { 
-      window.onload = function() { 
-        if (oldonload) { 
-          oldonload(); 
-        } 
-        func(); 
-      } 
-    } 
+    alert("works updated 2.5");
+    bugFix();
+    loadHeader();
+    loadFooter();
 }
-   
-addLoadEvent(bugFix); 
-addLoadEvent(loadHeader); 
-addLoadEvent(loadFooter);

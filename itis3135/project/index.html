@@ -9,6 +9,7 @@
     <script src="scripts/project.js"></script>
 </head>
 <body onload="bugFix()">
+    <!--div holder to be replaced when ajax loads components/header.html-->
     <div id="ajaxHeader">This will be replaced upda 2.5</div>
     <main>
         <div id="container"></div>
@@ -38,10 +39,7 @@
     </main>
     
     <div data-include ="components/footer.html"></div>
-
-    <script>
-        loadHeader();
-    </script>
+    <script>loadHeader();</script>
     <script src="scripts/include.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ header nav
     margin: 0px;
     width: 100%;
     overflow: auto;
-    background: silver !important;
+    background: #343434 !important;
     display: center;
 }
 header ul
@@ -12,9 +12,11 @@ header ul
     padding: 0;
     margin: 0 0 0 250px;
     list-style: none;
+    text-align: center;
 }
 header li
 {
+    font-size: 20px;
     float: left;
 }
 header li a
@@ -30,7 +32,6 @@ header li a
 header li a:hover
 {
     background: white;
-    text-transform: uppercase;
 }
 header img
 {
@@ -39,10 +40,6 @@ header img
     position: absolute;
     margin-top: 5px;
     margin-left: 5px;
-}
-header
-{
-    background: purple;
 }
 h1, h2
 {
@@ -58,8 +55,10 @@ figure
 }
 body 
 {
-    background-color: aliceblue;
+    background-color: #b1effe;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 body main
 {

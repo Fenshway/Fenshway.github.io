@@ -59,10 +59,10 @@ figure
 body 
 {
     background-color: aliceblue;
+    height: 100%;
 }
 body main
 {
-
     margin-left: 400px;
     margin-right: 400px;
 }

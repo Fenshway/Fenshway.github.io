@@ -5,7 +5,7 @@
     <title>Oriental Presbyterian Sailing Home Page</title>
     <link href ="styles/default.css" type ="text/css"  rel ="stylesheet"> 
 </head>
-<body onload="bugFix()">
+<body onload="preparePage()">
 
     <div data-include="components/header.html"></div>
 
@@ -37,7 +37,26 @@
     </main>
 
     <div id="ajaxFooter">This will be replaced</div>
+
+    <div id="ajaxHeader">This will be replaced</div>
+   <!---
     <button onclick="loadFooter()">button</button>
+
+    <button onclick="loadHeader()">button</button>
+
+    <script>
+        function loadHeader() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("ajaxHeader").innerHTML =
+            this.responseText;
+            }
+        };
+        xhttp.open("GET", "components/header.html", true);
+        xhttp.send();
+        }
+    </script>
 
     <script>
         function loadFooter() {
@@ -51,7 +70,7 @@
         xhttp.open("GET", "components/footer.html", true);
         xhttp.send();
         }
-    </script>
+    </script> -->
 
     <script src="scripts/include.js"></script>
     <script src="scripts/project.js"></script>

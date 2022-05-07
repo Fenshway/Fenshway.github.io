@@ -81,7 +81,7 @@ xhttp.send();
 
 function preparePage()
 {
-    alert("works updated");
+    alert("works updated 2.0");
     this.bugFix();
     this.loadHeader();
     this.loadFooter();

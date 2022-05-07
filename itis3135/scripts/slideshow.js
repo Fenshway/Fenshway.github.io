@@ -1,13 +1,11 @@
-const slide = document.querySelector(".slideshow-slide");
-const slideImages = document.querySelectorAll(".slideshow-slide img");
+var slide;
+var slideImages;
 
-const prevButton = document.querySelector("#prevButton");
-const nextButton = document.querySelector("#nextButton");
+var prevButton;
+var nextButton;
 
-let counter = 1;
-const size = slideImages[0].clientWidth;
-
-slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+let counter;
+var size;
 
 nextButton.addEventListener("click", function()
 {

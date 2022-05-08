@@ -8,6 +8,7 @@
     <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="scripts/project.js"></script>
 </head>
+<!---Onload bugFix() to ensure my slideshow work consistantly. I had problems of values getting saved and break on refresh as the server wasnt't fetching a new JS file-->
 <body onload="bugFix()">
     <!--div holder to be replaced when ajax loads components/header.html-->
     <div id="ajaxHeader">This will be replaced upda 2.5</div>
@@ -18,6 +19,7 @@
                     of our achievments in fostering a positive community of personal growth. We are always looking to grow our community so please look around our website and if 
                     you are interested in becoming a member, or just want to chat further, please reach out to us. Have a blessed day!
                 </p>
+                <!---Slide HTML code. Gets modified in-->
                 <div class ="slideshow-container">
                     <div class ="slideshow-slide">
                         <img class= "slideshow" src ="images/3135proj-ss4.jpg" id ="lastClone" alt ="">
@@ -37,7 +39,8 @@
             </div>
         </div>
     </main>
-    
+    <!--I used ajax to fetch my footer as well however I had problems getting the html validator to work
+    so I reverted back to a standard include with JS-->
     <div data-include ="components/footer.html"></div>
     <script>loadHeader();</script>
     <script src="scripts/include.js"></script>

@@ -1,3 +1,4 @@
+/*These functions use jQuery to alert the user that their form has been submitted*/
 $(document).ready(function () {
     $("#formBtn").click(function () {
         alert("Form Submission Successful!");

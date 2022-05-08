@@ -1,3 +1,4 @@
+/*initilized variables*/
 var slide;
 var slideImages;
 
@@ -6,7 +7,7 @@ var nextButton;
 
 let counter;
 var size;
-
+/*onload function to create slideshow*/
 function bugFix()
 {
 slide = document.querySelector(".slideshow-slide");
@@ -19,7 +20,7 @@ counter = 1;
 size = slideImages[0].clientWidth;
 
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
+/*adds an EventListener to nextButton to progress to the next image in slideshow*/
 nextButton.addEventListener("click", function()
 {
     if (counter >= slideImages.length - 1) return;
@@ -27,7 +28,7 @@ nextButton.addEventListener("click", function()
     counter += 1;
     slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
-
+/*adds an EventListener to prevButton to progress to the previous image in slideshow*/
 prevButton.addEventListener("click", function()
 {
     if (counter <= 0) return;
@@ -53,6 +54,7 @@ slide.addEventListener('transitionend', function()
 });
 }
 
+/*Fetches my header html code stored in "components/header.html" using ajax*/
 function loadHeader() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -64,7 +66,8 @@ function loadHeader() {
     xhttp.open("GET", "components/header.html", true);
     xhttp.send();
 }
-
+/*Fetches my footer html code stored in "components/footer.html" using ajax however I do not use this function anymore
+because it broke my validation buttons loctated in the footer no longer worked properly*/
 function loadFooter() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
